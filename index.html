@@ -82,7 +82,7 @@
         .seg-card .overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(5,5,5,0.92) 0%, transparent 60%);
+            background: linear-gradient(to top, rgba(5, 5, 5, 0.92) 0%, transparent 60%);
             display: flex;
             align-items: flex-end;
             padding: 1rem;
@@ -98,13 +98,16 @@
             color: white;
             transition: background 0.2s, transform 0.2s;
         }
+
         .btn-primary:hover {
             background: var(--red);
             transform: scale(1.05);
         }
 
         /* Nav link hover */
-        .nav-link:hover { color: var(--blue); }
+        .nav-link:hover {
+            color: var(--blue);
+        }
 
         /* Badge brand */
         .badge-blue {
@@ -112,6 +115,7 @@
             color: #60b4f0;
             border: 1px solid rgba(25, 134, 208, 0.3);
         }
+
         .badge-red {
             background: rgba(255, 87, 87, 0.15);
             color: #ff8888;
@@ -125,7 +129,9 @@
         }
 
         /* Feature card icon */
-        .feature-icon { color: var(--blue); }
+        .feature-icon {
+            color: var(--blue);
+        }
 
         /* Signup section */
         .signup-section {
@@ -156,15 +162,14 @@
             Propulsé pour les World Models 4D
         </div>
         <h1 class="text-5xl md:text-7xl font-bold mb-8 tech-font leading-tight">
-            Entraînez vos Véhicules <br> <span class="gradient-text">avec la Réalité Pure</span>
+            Entraînez vos Models <br> <span class="gradient-text">avec la Réalité Pure</span>
         </h1>
         <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
             Accédez à la plus grande bibliothèque européenne de vidéos segmentées en France.
             Optimisé pour la prédiction physique et la cohérence temporelle.
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="#signup"
-                class="btn-primary px-10 py-4 rounded-lg font-bold text-lg">
+            <a href="#signup" class="btn-primary px-10 py-4 rounded-lg font-bold text-lg">
                 Explorer le Catalogue (1 Mois Offert)
             </a>
             <button class="border border-white/20 px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/5 transition">
@@ -185,10 +190,12 @@
                     <h3 class="tech-font text-2xl font-bold">Dataset Alpha Souverain
                         <span style="color: var(--blue)">V1.0</span>
                     </h3>
-                    <p style="color: #60b4f0;" class="italic">Prédiction Physique 4D • Cohérence Temporelle • Profondeur Sémantique</p>
+                    <p style="color: #60b4f0;" class="italic">Prédiction Physique 4D • Cohérence Temporelle • Profondeur
+                        Sémantique</p>
                 </div>
                 <div class="flex space-x-2">
-                    <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-xs font-bold">RGPD COMPLIANT</span>
+                    <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-xs font-bold">RGPD
+                        COMPLIANT</span>
                     <span class="badge-blue px-3 py-1 rounded text-xs font-bold">CAPTURE 2026</span>
                     <span class="badge-red px-3 py-1 rounded text-xs font-bold">EU AI ACT ✓</span>
                 </div>
@@ -199,12 +206,14 @@
     <!-- Section : Nos données en action -->
     <section class="max-w-7xl mx-auto px-8 mb-24">
         <div class="text-center mb-14">
-            <div class="inline-block px-4 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase badge-red">Live Demo</div>
+            <div class="inline-block px-4 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase badge-red">
+                Live Demo</div>
             <h2 class="text-4xl md:text-5xl font-bold tech-font mb-4">
                 Nos Données <span class="gradient-text">en Action</span>
             </h2>
             <p class="text-gray-400 max-w-2xl mx-auto text-lg">
-                Voyez exactement comment nos vidéos sont annotées image par image — et pourquoi elles sont le carburant parfait pour entraîner vos World Models.
+                Voyez exactement comment nos vidéos sont annotées image par image — et pourquoi elles sont le carburant
+                parfait pour entraîner vos World Models.
             </p>
         </div>
 
@@ -213,39 +222,29 @@
 
             <!-- Vidéo 1 -->
             <div class="relative rounded-2xl overflow-hidden"
-                 style="border: 1px solid rgba(25, 134, 208, 0.4); box-shadow: 0 0 40px rgba(25, 134, 208, 0.2);">
-                <video
-                    id="vid-1"
-                    src="v1.mp4"
-                    class="w-full block"
-                    style="border-radius: 1rem;"
-                    muted
-                    playsinline
-                    loop
+                style="border: 1px solid rgba(25, 134, 208, 0.4); box-shadow: 0 0 40px rgba(25, 134, 208, 0.2);">
+                <video id="vid-1" src="v1.mp4" class="w-full block" style="border-radius: 1rem;" muted playsinline loop
                     controls>
                 </video>
                 <div class="absolute top-3 left-3 flex gap-2 pointer-events-none">
-                    <span class="text-white px-2 py-1 rounded text-xs font-bold" style="background: var(--red)">&#9679; LIVE</span>
-                    <span class="bg-black/70 px-2 py-1 rounded text-xs font-bold" style="color: #60b4f0; border: 1px solid rgba(25,134,208,0.4)">ANNOTATION 4D</span>
+                    <span class="text-white px-2 py-1 rounded text-xs font-bold" style="background: var(--red)">&#9679;
+                        LIVE</span>
+                    <span class="bg-black/70 px-2 py-1 rounded text-xs font-bold"
+                        style="color: #60b4f0; border: 1px solid rgba(25,134,208,0.4)">ANNOTATION 4D</span>
                 </div>
             </div>
 
             <!-- Vidéo 2 -->
             <div class="relative rounded-2xl overflow-hidden"
-                 style="border: 1px solid rgba(255, 87, 87, 0.3); box-shadow: 0 0 40px rgba(255, 87, 87, 0.15);">
-                <video
-                    id="vid-2"
-                    src="v2.mp4"
-                    class="w-full block"
-                    style="border-radius: 1rem;"
-                    muted
-                    playsinline
-                    loop
+                style="border: 1px solid rgba(255, 87, 87, 0.3); box-shadow: 0 0 40px rgba(255, 87, 87, 0.15);">
+                <video id="vid-2" src="v2.mp4" class="w-full block" style="border-radius: 1rem;" muted playsinline loop
                     controls>
                 </video>
                 <div class="absolute top-3 left-3 flex gap-2 pointer-events-none">
-                    <span class="text-white px-2 py-1 rounded text-xs font-bold" style="background: var(--red)">&#9679; LIVE</span>
-                    <span class="bg-black/70 px-2 py-1 rounded text-xs font-bold" style="color: #ff9999; border: 1px solid rgba(255,87,87,0.3)">WORLD MODEL TRAINING</span>
+                    <span class="text-white px-2 py-1 rounded text-xs font-bold" style="background: var(--red)">&#9679;
+                        LIVE</span>
+                    <span class="bg-black/70 px-2 py-1 rounded text-xs font-bold"
+                        style="color: #ff9999; border: 1px solid rgba(255,87,87,0.3)">WORLD MODEL TRAINING</span>
                 </div>
             </div>
 
@@ -292,66 +291,70 @@
         <div class="card-blur p-8 rounded-2xl">
             <div class="feature-icon mb-4 text-3xl">🛡️</div>
             <h4 class="font-bold text-xl mb-4 tech-font uppercase">Souveraineté Totale</h4>
-            <p class="text-gray-400 text-sm">Données capturées en France. Hébergement sécurisé EU. Conforme au futur EU AI Act.</p>
+            <p class="text-gray-400 text-sm">Données capturées en France. Hébergement sécurisé EU. Conforme au futur EU
+                AI Act.</p>
         </div>
         <div class="card-blur p-8 rounded-2xl">
             <div class="feature-icon mb-4 text-3xl">⚡</div>
             <h4 class="font-bold text-xl mb-4 tech-font uppercase">Prêt pour World Models</h4>
-            <p class="text-gray-400 text-sm">Cartes de profondeur et flux optique inclus pour une compréhension physique du monde.</p>
+            <p class="text-gray-400 text-sm">Cartes de profondeur et flux optique inclus pour une compréhension physique
+                du monde.</p>
         </div>
         <div class="card-blur p-8 rounded-2xl">
             <div class="feature-icon mb-4 text-3xl">🎯</div>
             <h4 class="font-bold text-xl mb-4 tech-font uppercase">Edge Cases Uniques</h4>
-            <p class="text-gray-400 text-sm">Conditions météo extrêmes, ronds-points complexes et comportements humains imprévisibles.</p>
+            <p class="text-gray-400 text-sm">Conditions météo extrêmes, ronds-points complexes et comportements humains
+                imprévisibles.</p>
         </div>
     </section>
 
     <!-- Signup -->
     <section id="signup" class="max-w-3xl mx-auto px-8 py-20 signup-section rounded-3xl mb-24 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 tech-font uppercase">Accès Prioritaire</h2>
-        <p class="mb-8 text-blue-100 italic">Inscrivez votre boîte aujourd'hui et bénéficiez de 30 jours de téléchargement illimité dès l'ouverture.</p>
+        <p class="mb-8 text-blue-100 italic">Inscrivez votre boîte aujourd'hui et bénéficiez de 30 jours de
+            téléchargement illimité dès l'ouverture.</p>
         <form class="flex flex-col md:flex-row gap-4">
             <input type="email" placeholder="Votre email professionnel (Renault, Valeo...)"
                 class="flex-1 px-6 py-4 rounded-lg bg-white text-black focus:outline-none transition"
-                style="focus:ring: 4px solid var(--red)"
-                required>
+                style="focus:ring: 4px solid var(--red)" required>
             <button type="submit"
                 class="bg-black text-white px-8 py-4 rounded-lg font-bold transition uppercase tracking-widest"
-                style="border: 2px solid var(--red)"
-                onmouseover="this.style.background='#ff5757'"
+                style="border: 2px solid var(--red)" onmouseover="this.style.background='#ff5757'"
                 onmouseout="this.style.background='black'">
                 S'inscrire
             </button>
         </form>
-        <p class="mt-4 text-xs" style="color: rgba(255,255,255,0.6)">En vous inscrivant, vous acceptez de recevoir nos datasets de test et invitations beta.</p>
+        <p class="mt-4 text-xs" style="color: rgba(255,255,255,0.6)">En vous inscrivant, vous acceptez de recevoir nos
+            datasets de test et invitations beta.</p>
     </section>
 
     <footer class="py-12 text-center text-gray-600 border-t border-white/5 max-w-7xl mx-auto px-8">
         <div class="tech-font text-lg mb-4 uppercase">
-            World <span style="color:var(--blue)">Data</span> <span style="color:var(--red)">Model</span> — Basé à Paris, France
+            World <span style="color:var(--blue)">Data</span> <span style="color:var(--red)">Model</span> — Basé à
+            Paris, France
         </div>
         <p class="text-sm">© 2026 — Révolutionner la Vision par Ordinateur</p>
     </footer>
 
 
-<script>
-    // Autoplay chaque vidéo locale dès qu'elle entre dans le viewport
-    ['vid-1', 'vid-2'].forEach(id => {
-        const vid = document.getElementById(id);
-        let triggered = false;
+    <script>
+        // Autoplay chaque vidéo locale dès qu'elle entre dans le viewport
+        ['vid-1', 'vid-2'].forEach(id => {
+            const vid = document.getElementById(id);
+            let triggered = false;
 
-        const obs = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !triggered) {
-                    triggered = true;
-                    vid.play();
-                }
-            });
-        }, { threshold: 0.3 });
+            const obs = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !triggered) {
+                        triggered = true;
+                        vid.play();
+                    }
+                });
+            }, { threshold: 0.3 });
 
-        obs.observe(vid);
-    });
-</script>
+            obs.observe(vid);
+        });
+    </script>
 
 </body>
 
