@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoData AI | Datasets Souverains pour World Models</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --blue: #1986d0;
+            --red: #ff5757;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: white;
+        }
+
+        .tech-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--red) 0%, var(--blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-glow {
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 500px;
+            background: radial-gradient(circle, rgba(25, 134, 208, 0.18) 0%, rgba(255, 87, 87, 0.06) 60%, transparent 80%);
+            z-index: -1;
+        }
+
+        .card-blur {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(25, 134, 208, 0.15);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-blur:hover {
+            border-color: rgba(25, 134, 208, 0.4);
+            box-shadow: 0 0 30px rgba(25, 134, 208, 0.15);
+        }
+
+        .seg-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            border: 1px solid rgba(25, 134, 208, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .seg-card:hover {
+            transform: translateY(-6px) scale(1.015);
+            box-shadow: 0 0 40px rgba(25, 134, 208, 0.35);
+        }
+
+        .seg-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .seg-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .seg-card .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(5,5,5,0.92) 0%, transparent 60%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem;
+        }
+
+        .video-glow {
+            box-shadow: 0 0 60px rgba(25, 134, 208, 0.3);
+        }
+
+        /* Bouton CTA principal */
+        .btn-primary {
+            background: var(--blue);
+            color: white;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .btn-primary:hover {
+            background: var(--red);
+            transform: scale(1.05);
+        }
+
+        /* Nav link hover */
+        .nav-link:hover { color: var(--blue); }
+
+        /* Badge brand */
+        .badge-blue {
+            background: rgba(25, 134, 208, 0.15);
+            color: #60b4f0;
+            border: 1px solid rgba(25, 134, 208, 0.3);
+        }
+        .badge-red {
+            background: rgba(255, 87, 87, 0.15);
+            color: #ff8888;
+            border: 1px solid rgba(255, 87, 87, 0.3);
+        }
+
+        /* Section hero border */
+        .hero-img-wrap {
+            border: 1px solid rgba(25, 134, 208, 0.5);
+            box-shadow: 0 25px 60px rgba(25, 134, 208, 0.2);
+        }
+
+        /* Feature card icon */
+        .feature-icon { color: var(--blue); }
+
+        /* Signup section */
+        .signup-section {
+            background: linear-gradient(135deg, var(--blue) 0%, #0f5a9a 100%);
+            box-shadow: 0 20px 60px rgba(25, 134, 208, 0.4);
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <div class="hero-glow"></div>
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="tech-font text-2xl font-bold tracking-tighter">
+            World <span style="color: var(--blue)">Data</span> <span style="color: var(--red)">Model</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-gray-400">
+            <a href="#" class="nav-link transition">Datasets</a>
+            <a href="#" class="nav-link transition">Conformité EU</a>
+            <a href="#" class="nav-link transition">Tarifs</a>
+        </div>
+        <a href="#signup" class="btn-primary px-6 py-2 rounded-full text-sm font-bold">ESSAI GRATUIT</a>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-8 py-20 text-center">
+        <div class="inline-block px-4 py-1 rounded-full text-xs font-bold mb-6 tracking-widest uppercase badge-blue">
+            Propulsé pour les World Models 4D
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 tech-font leading-tight">
+            Entraînez vos Véhicules <br> <span class="gradient-text">avec la Réalité Pure</span>
+        </h1>
+        <p class="text-gray-400 text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+            Accédez à la plus grande bibliothèque européenne de vidéos segmentées en France.
+            Optimisé pour la prédiction physique et la cohérence temporelle.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#signup"
+                class="btn-primary px-10 py-4 rounded-lg font-bold text-lg">
+                Explorer le Catalogue (1 Mois Offert)
+            </a>
+            <button class="border border-white/20 px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/5 transition">
+                Voir un Sample 4K
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero image principale -->
+    <section class="max-w-6xl mx-auto px-8 mb-24">
+        <div class="relative rounded-2xl overflow-hidden hero-img-wrap">
+            <img src="Gemini_Generated_Image_shxy8ashxy8ashxy (1).png"
+                alt="Dataset Alpha Souverain V1.0 — Vue cockpit + segmentation sémantique 4D"
+                class="w-full object-cover" style="max-height: 520px; object-position: center;">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent"></div>
+            <div class="absolute bottom-10 left-10 right-10 flex justify-between items-end">
+                <div>
+                    <h3 class="tech-font text-2xl font-bold">Dataset Alpha Souverain
+                        <span style="color: var(--blue)">V1.0</span>
+                    </h3>
+                    <p style="color: #60b4f0;" class="italic">Prédiction Physique 4D • Cohérence Temporelle • Profondeur Sémantique</p>
+                </div>
+                <div class="flex space-x-2">
+                    <span class="bg-green-500/20 text-green-400 px-3 py-1 rounded text-xs font-bold">RGPD COMPLIANT</span>
+                    <span class="badge-blue px-3 py-1 rounded text-xs font-bold">CAPTURE 2026</span>
+                    <span class="badge-red px-3 py-1 rounded text-xs font-bold">EU AI ACT ✓</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section : Nos données en action -->
+    <section class="max-w-7xl mx-auto px-8 mb-24">
+        <div class="text-center mb-14">
+            <div class="inline-block px-4 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase badge-red">Live Demo</div>
+            <h2 class="text-4xl md:text-5xl font-bold tech-font mb-4">
+                Nos Données <span class="gradient-text">en Action</span>
+            </h2>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                Voyez exactement comment nos vidéos sont annotées image par image — et pourquoi elles sont le carburant parfait pour entraîner vos World Models.
+            </p>
+        </div>
+
+        <!-- Vidéos locales autoplay au scroll : 2 côte à côte -->
+        <div class="grid md:grid-cols-2 gap-6 mb-12">
+
+            <!-- Vidéo 1 -->
+            <div class="relative rounded-2xl overflow-hidden"
+                 style="border: 1px solid rgba(25, 134, 208, 0.4); box-shadow: 0 0 40px rgba(25, 134, 208, 0.2);">
+                <video
+                    id="vid-1"
+                    src="v1.mp4"
+                    class="w-full block"
+                    style="border-radius: 1rem;"
+                    muted
+                    playsinline
+                    loop
+                    controls>
+                </video>
+                <div class="absolute top-3 left-3 flex gap-2 pointer-events-none">
+                    <span class="text-white px-2 py-1 rounded text-xs font-bold" style="background: var(--red)">&#9679; LIVE</span>
+                    <span class="bg-black/70 px-2 py-1 rounded text-xs font-bold" style="color: #60b4f0; border: 1px solid rgba(25,134,208,0.4)">ANNOTATION 4D</span>
+                </div>
+            </div>
+
+            <!-- Vidéo 2 -->
+            <div class="relative rounded-2xl overflow-hidden"
+                 style="border: 1px solid rgba(255, 87, 87, 0.3); box-shadow: 0 0 40px rgba(255, 87, 87, 0.15);">
+                <video
+                    id="vid-2"
+                    src="v2.mp4"
+                    class="w-full block"
+                    style="border-radius: 1rem;"
+                    muted
+                    playsinline
+                    loop
+                    controls>
+                </video>
+                <div class="absolute top-3 left-3 flex gap-2 pointer-events-none">
+                    <span class="text-white px-2 py-1 rounded text-xs font-bold" style="background: var(--red)">&#9679; LIVE</span>
+                    <span class="bg-black/70 px-2 py-1 rounded text-xs font-bold" style="color: #ff9999; border: 1px solid rgba(255,87,87,0.3)">WORLD MODEL TRAINING</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Grille de 3 images -->
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="seg-card">
+                <img src="seg_night.png" alt="Annotation nocturne Paris — edge case pluie">
+                <div class="overlay">
+                    <div>
+                        <p class="tech-font text-sm font-bold text-white">ANNOTATION NOCTURNE</p>
+                        <p class="text-xs" style="color: #60b4f0">Edge Case • Pluie • Paris</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seg-card">
+                <img src="seg_roundabout.png" alt="Rond-point complexe — cohérence temporelle">
+                <div class="overlay">
+                    <div>
+                        <p class="tech-font text-sm font-bold text-white">ROND-POINT COMPLEXE</p>
+                        <p class="text-xs" style="color: #60b4f0">Multi-agents • Cohérence Temporelle</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seg-card">
+                <img src="seg_annotation.png" alt="Pipeline d'annotation 4D">
+                <div class="overlay">
+                    <div>
+                        <p class="tech-font text-sm font-bold text-white">PIPELINE 4D</p>
+                        <p class="text-xs" style="color: #60b4f0">LiDAR Synced • Depth Map • Optique</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Feature cards -->
+    <section class="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-8 mb-24">
+        <div class="card-blur p-8 rounded-2xl">
+            <div class="feature-icon mb-4 text-3xl">🛡️</div>
+            <h4 class="font-bold text-xl mb-4 tech-font uppercase">Souveraineté Totale</h4>
+            <p class="text-gray-400 text-sm">Données capturées en France. Hébergement sécurisé EU. Conforme au futur EU AI Act.</p>
+        </div>
+        <div class="card-blur p-8 rounded-2xl">
+            <div class="feature-icon mb-4 text-3xl">⚡</div>
+            <h4 class="font-bold text-xl mb-4 tech-font uppercase">Prêt pour World Models</h4>
+            <p class="text-gray-400 text-sm">Cartes de profondeur et flux optique inclus pour une compréhension physique du monde.</p>
+        </div>
+        <div class="card-blur p-8 rounded-2xl">
+            <div class="feature-icon mb-4 text-3xl">🎯</div>
+            <h4 class="font-bold text-xl mb-4 tech-font uppercase">Edge Cases Uniques</h4>
+            <p class="text-gray-400 text-sm">Conditions météo extrêmes, ronds-points complexes et comportements humains imprévisibles.</p>
+        </div>
+    </section>
+
+    <!-- Signup -->
+    <section id="signup" class="max-w-3xl mx-auto px-8 py-20 signup-section rounded-3xl mb-24 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 tech-font uppercase">Accès Prioritaire</h2>
+        <p class="mb-8 text-blue-100 italic">Inscrivez votre boîte aujourd'hui et bénéficiez de 30 jours de téléchargement illimité dès l'ouverture.</p>
+        <form class="flex flex-col md:flex-row gap-4">
+            <input type="email" placeholder="Votre email professionnel (Renault, Valeo...)"
+                class="flex-1 px-6 py-4 rounded-lg bg-white text-black focus:outline-none transition"
+                style="focus:ring: 4px solid var(--red)"
+                required>
+            <button type="submit"
+                class="bg-black text-white px-8 py-4 rounded-lg font-bold transition uppercase tracking-widest"
+                style="border: 2px solid var(--red)"
+                onmouseover="this.style.background='#ff5757'"
+                onmouseout="this.style.background='black'">
+                S'inscrire
+            </button>
+        </form>
+        <p class="mt-4 text-xs" style="color: rgba(255,255,255,0.6)">En vous inscrivant, vous acceptez de recevoir nos datasets de test et invitations beta.</p>
+    </section>
+
+    <footer class="py-12 text-center text-gray-600 border-t border-white/5 max-w-7xl mx-auto px-8">
+        <div class="tech-font text-lg mb-4 uppercase">
+            World <span style="color:var(--blue)">Data</span> <span style="color:var(--red)">Model</span> — Basé à Paris, France
+        </div>
+        <p class="text-sm">© 2026 — Révolutionner la Vision par Ordinateur</p>
+    </footer>
+
+
+<script>
+    // Autoplay chaque vidéo locale dès qu'elle entre dans le viewport
+    ['vid-1', 'vid-2'].forEach(id => {
+        const vid = document.getElementById(id);
+        let triggered = false;
+
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !triggered) {
+                    triggered = true;
+                    vid.play();
+                }
+            });
+        }, { threshold: 0.3 });
+
+        obs.observe(vid);
+    });
+</script>
+
+</body>
+
+</html>
